@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.contenant {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.contenu {
+    flex: 0 1 210px;
+    height: 400px;
+    padding: 35px 30px 35px 30px;
+}
+
+.contenu img {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.bloc1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.bloc2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.bloc3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    margin-top: 40%;
+}
+
+button:hover, button:focus {
+    outline: 0;
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) 2px solid;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-1:hover, .btn-1:focus {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn-2:hover, .btn-2:focus {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn-3:hover, .btn-3:focus {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        height: auto;
+    }
+
+    p {
+        padding-right: 0;
+    }
+
+    .contenant {
+        margin: 10% 0 10% 0;
+    }
+    .contenu {
+        flex: 0 1 230px;
+        height: 340px;
+        padding: 35px 30px 35px 30px;
+    }
+  .bloc1 {
+      border-radius: 5px 5px 0 0;
+  }
+  .bloc3 {
+      border-radius: 0 0 5px 5px;
+  }
+  button{
+      margin-top: 10%;
+  }
+
+}
